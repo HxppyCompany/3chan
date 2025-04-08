@@ -42,7 +42,7 @@ def setup_app():
     app.include_router(topics_router)
     app.include_router(message_router)
 
-    app.add_exception_handler(AppException, app_exception_handler)
+    app.add_exception_handler(AppException, app_exception_handler)w
 
     settings = AppSettings()
     app.state.db_manager = DatabaseManager(settings.db_url)
