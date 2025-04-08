@@ -21,7 +21,7 @@ class NotFoundException(AppException):
     def __init__(self, details: str | None = None):
         super().__init__(
             status.HTTP_404_NOT_FOUND,
-            "Entity was not found" if details is None else None
+            "Entity was not found" if details is None else details
         )
 
 
@@ -29,7 +29,7 @@ class EntityAlreadyExistException(AppException):
     def __init__(self, details: str | None = None):
         super().__init__(
             status.HTTP_409_CONFLICT,
-            "Entity already exist" if details is None else None
+            "Entity already exist" if details is None else details
         )
 
 def app_exception_handler(request: Request, exception: Exception):

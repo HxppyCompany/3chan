@@ -48,3 +48,15 @@ ModuleNotFoundError: No module named 'psycopg2'
 [09:06:13] INFO | three_chan.common.setup > Started!
 [09:08:05] INFO | root > Stopping app
 [09:08:05] INFO | root > Stopped.
+[09:09:12] INFO | three_chan.common.setup > Starting
+[09:09:12] INFO | three_chan.common.setup > Started!
+[09:11:05] INFO | root > Stopping app
+[09:11:05] INFO | root > Stopped.
+[09:11:14] INFO | three_chan.common.setup > Starting
+[09:11:14] INFO | three_chan.common.setup > Started!
+[09:12:11] INFO | root > Stopping app
+[09:12:11] INFO | root > Stopped.
+[09:12:19] INFO | three_chan.common.setup > Starting
+[09:12:19] INFO | three_chan.common.setup > Started!
+[09:15:05] INFO | root > Stopping app
+[09:15:05] INFO | root > Stopped.
