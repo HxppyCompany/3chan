@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "three_chan"
+version = "0.1.0"
+description = ""
+authors = ["arsuhinars <arsuhinars@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+fastapi = "^0.115.8"
+uvicorn = { extras = ["standard"], version = "^0.34.0" }
+pydantic = "^2.10.6"
+pydantic-settings = "^2.8.0"
+sqlalchemy = "^2.0.38"
+aiosqlite = "^0.21.0"
+debugpy = "^1.8.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.mypy.overrides]]
+module = ["sqlalchemy.*"]
+follow_untyped_imports = true
